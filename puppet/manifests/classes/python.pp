@@ -10,7 +10,7 @@ class python {
             exec { "pip-install":
                 command => "easy_install -U pip",
                 creates => "pip",
-                require => Package["python26-devel", "python26-distribute"]
+                require => Package["python27-devel", "python27-distribute"]
             }
 
             exec { "pip-install-compiled":
