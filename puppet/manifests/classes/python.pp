@@ -3,7 +3,7 @@ class python {
     case $operatingsystem {
         centos: {
             package {
-                ["python26-devel", "python26-libs", "python26-distribute", "python26-mod_wsgi"]:
+                ["python27-devel", "python27-libs", "python27-distribute", "python27-mod_wsgi"]:
                     ensure => installed;
             }
 
@@ -21,7 +21,7 @@ class python {
 
         ubuntu: {
             package {
-                ["python2.6-dev", "python2.6", "libapache2-mod-wsgi", "python-wsgi-intercept", "python-pip"]:
+                ["python2.7-dev", "python2.7", "libapache2-mod-wsgi", "python-wsgi-intercept", "python-pip"]:
                     ensure => installed;
             }
 
